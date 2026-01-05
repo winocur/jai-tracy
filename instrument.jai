@@ -161,4 +161,7 @@ My_Plugin :: struct {
     // The user should not mess with these:
     //
     prepend_zone_node:   *Code_Node;
+    
+    
+    handle_one_option: (p: *Metaprogram_Plugin, options: [] string, cursor: int) -> new_cursor: int;
 }

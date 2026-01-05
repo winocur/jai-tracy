@@ -1,12 +1,12 @@
 //
 // This file was auto-generated using the following command:
 //
-// jai generate.jai
+// jai src/modules/tracy/generate.jai
 //
 
 
 
-TracyPlotFormatEnum :: enum u32 {
+TracyPlotFormatEnum :: enum s32 {
     Number     :: 0;
     Memory     :: 1;
     Percentage :: 2;

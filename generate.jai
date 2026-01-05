@@ -43,7 +43,7 @@ generate_bindings :: (args: [] string) -> bool {
         source_file := tprint("%/public/TracyClient.cpp", SOURCE_PATH);
 
         #if OS == .WINDOWS {
-            extra_args := string.["/DTRACY_ENABLE", "/DTRACY_EXPORTS"];
+            extra_args := string.["/DTRACY_ENABLE", "/DTRACY_EXPORTS" ];
         } else {
             extra_args := string.["-DTRACY_ENABLE", "-DTRACY_EXPORTS", "-std=c++11", "-Wno-deprecated-declarations"];
         }
